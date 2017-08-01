@@ -1,5 +1,7 @@
 # JIRA Chrome extension
-A chrome extension that queries a public JIRA API (https://jira.secondlife.com).  This is a fully functional chrome extension with a bug, some display issues, and generally some bad practices.  Your task is to make it production ready, make it easy for someone else to consume, and generally improve upon the code how you see fit.
+A chrome extension that queries a public JIRA API (https://jira.secondlife.com).  This is a fully functional chrome extension with a bug, some display issues, and generally some bad practices.  
+
+**Your task is to make it production ready, make it easy for someone else to consume, and generally improve upon the code how you see fit.**
 
 ## Files:
 * main.js - the :meat_on_bone: of the code that performs querys and displays results
