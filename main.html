@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>JIRA Quick Search</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <script src="main.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 20%">
+        <h4>Search JIRA</h4>
+        <h5>Ticket Status Query</h5>
+          <p>
+            <input type="search" placeholder="enter a project" id="project" />
+            <select id="statusSelect">
+              <option value="1">Open</option>
+              <option value="3">In Progress</option>
+            </select>
+            <label> for longer than <input type="number" id="daysPast" min="0" max="20" /> days</label>
+            <input type="submit" value="query" id="query" />
+            </p><hr /><p>
+            <h5>JIRA Activity Query</h5>
+            <input type="search" placeholder="enter a user" id="user" />
+            <input type="submit" value="get JIRA Activity" id="feed" />
+          </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns">
+        <p><span id="status" hidden /></p>
+        <div id="query-result" hidden></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
