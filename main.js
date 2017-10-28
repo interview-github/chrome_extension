@@ -70,7 +70,7 @@ function buildJQL(callback) {
   var status = document.getElementById("statusSelect").value;
   var inStatusFor = document.getElementById("daysPast").value
   var fullCallbackUrl = callbackBase;
-  fullCallbackUrl += 'project=${project}+and+status=${status}+and+status+changed+to+${status}+before+-${inStatusFor}d&fields=id,status,key,assignee,summary&maxresults=100';
+  fullCallbackUrl += `project=${project}+and+status=${status}+and+status+changed+to+${status}+before+-${inStatusFor}d&fields=id,status,key,assignee,summary&maxresults=100`;
   callback(fullCallbackUrl);
 }
 function createHTMLElementResult(response){
